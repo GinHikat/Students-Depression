@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+seaborn
+matplotlib
+datetime
+Flask
+dill
+python-dotenv
+pyaml
+python-multipart
+ipykernel
+xgboost
+catboost
