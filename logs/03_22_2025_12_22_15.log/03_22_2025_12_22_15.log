@@ -1,8 +1,0 @@
-[2025-03-22 12:22:16,664] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
-[2025-03-22 12:22:16,684] 97 werkzeug - WARNING -  * Debugger is active!
-[2025-03-22 12:22:16,690] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
-[2025-03-22 12:22:21,762] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask\\typing.py', reloading
-[2025-03-22 12:22:21,762] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\sansio\\response.py', reloading
-[2025-03-22 12:22:21,774] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
-[2025-03-22 12:22:21,823] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\dill\\__init__.py', reloading
-[2025-03-22 12:22:21,825] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\dill\\_dill.py', reloading

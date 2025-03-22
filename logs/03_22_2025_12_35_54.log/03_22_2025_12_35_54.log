@@ -1,4 +1,0 @@
-[2025-03-22 12:35:55,414] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
-[2025-03-22 12:35:55,414] 97 werkzeug - WARNING -  * Debugger is active!
-[2025-03-22 12:35:55,430] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
-[2025-03-22 12:35:56,887] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:35:56] "POST /prediction HTTP/1.1" 200 -

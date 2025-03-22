@@ -20,8 +20,3 @@ class Final:
         self.trainer.init_train()
         
         
-if __name__ == '__main__':
-    ultimate_executer = Final()
-    ultimate_executer.all_step()
-
-        

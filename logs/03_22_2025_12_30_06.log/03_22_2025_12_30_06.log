@@ -1,5 +1,0 @@
-[2025-03-22 12:30:07,273] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
-[2025-03-22 12:30:07,284] 97 werkzeug - WARNING -  * Debugger is active!
-[2025-03-22 12:30:07,291] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
-[2025-03-22 12:30:11,703] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:30:11] "POST /prediction HTTP/1.1" 200 -
-[2025-03-22 12:31:02,193] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask\\globals.py', reloading
