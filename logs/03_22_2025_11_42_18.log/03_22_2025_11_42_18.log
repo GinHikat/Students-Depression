@@ -1,0 +1,13 @@
+[2025-03-22 11:42:19,902] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-03-22 11:42:19,911] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-22 11:42:19,911] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
+[2025-03-22 11:42:21,446] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 11:42:21] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[2025-03-22 11:42:21,629] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 11:42:21] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-03-22 11:42:21,798] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 11:42:21] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-03-22 11:42:22,118] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 11:42:22] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=pleliKzt3UCEsCnmRdVe HTTP/1.1" 200 -
+[2025-03-22 11:42:22,386] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 11:42:22] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-03-22 12:22:12,342] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\utils.py', reloading
+[2025-03-22 12:22:12,418] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\_internal.py', reloading
+[2025-03-22 12:22:12,427] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+[2025-03-22 12:22:12,427] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+[2025-03-22 12:22:12,455] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\admin\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading

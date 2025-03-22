@@ -1,0 +1,5 @@
+[2025-03-22 12:37:19,619] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-03-22 12:37:19,632] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-22 12:37:19,639] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
+[2025-03-22 12:37:20,726] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:37:20] "POST /prediction HTTP/1.1" 200 -
+[2025-03-22 12:41:29,353] 97 werkzeug - INFO -  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\__init__.py', reloading

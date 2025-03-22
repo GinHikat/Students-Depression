@@ -1,0 +1,7 @@
+[2025-03-22 12:52:23,885] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-03-22 12:52:23,896] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-22 12:52:23,899] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
+[2025-03-22 12:52:35,700] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\ml1_midterm\\app.py', reloading
+[2025-03-22 12:52:35,700] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\ML1_midterm\\app.py', reloading
+[2025-03-22 12:52:35,700] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\ml1_midterm\\app.py', reloading
+[2025-03-22 12:52:35,700] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\ML1_midterm\\app.py', reloading

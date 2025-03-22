@@ -30,8 +30,8 @@ class ModelTrainer:
     def init_train(self):
         try:
             logging.info('Loading datasets')
-            X_train = pd.read_csv('main/data/transformed/x_train.csv')
-            X_test = pd.read_csv('main/data/transformed/x_test.csv')
+            X_train = pd.read_csv('main/data/transformed/x_train.csv', index_col=0)
+            X_test = pd.read_csv('main/data/transformed/x_test.csv', index_col=0)
             y_train = pd.read_csv('main/data/transformed/y_train.csv')
             y_test = pd.read_csv('main/data/transformed/y_test.csv')
             
@@ -126,3 +126,8 @@ class ModelTrainer:
         except Exception as e:
             raise CustomException(e, sys)
         
+if __name__ == '__main__':
+    train = ModelTrainer()
+    x_train = train.init_train()
+    
+    

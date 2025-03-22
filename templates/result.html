@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?flowers,motivation') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+        }
+        .low-risk {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .high-risk {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        {% if result < 0.5 %}
+            <div class="low-risk">
+                <i class="fas fa-smile icon"></i>
+                <h2>Prediction: You have {{ result|round(2) }} chance of Depression</h2>
+                <p>Great job! Keep up your positive habits and stay healthy! 🌟</p>
+            </div>
+        {% else %}
+            <div class="high-risk">
+                <i class="fas fa-exclamation-triangle icon"></i>
+                <h2>Prediction: You have {{ result|round(2) }} chance of Depression</h2>
+                <p>It's okay to struggle. Reach out to loved ones or a professional for support. You are not alone! 💙</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

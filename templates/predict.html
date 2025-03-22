@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Depression Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 14px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+            width: 50%;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 0.9em;
+        }
+        .btn {
+            background: #ff4757;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 6px;
+            transition: background 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #e84118;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Depression Assessment</h1>
+        <p>Please fill out the form below to assess student depression indicators.</p>
+
+        <form action="{{ url_for('predict') }}" method="post">
+            <div class="form-group">
+                <label>Gender</label>
+                <select name="Gender" required>
+                    <option value="" selected disabled>Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <select name="Age" required>
+                    <option value="" selected disabled>Select your Age</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Academic Pressure (1-5)</label>
+                <select name="Academic Pressure" required>
+                    <option value="" selected disabled>Select Level</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Study Satisfaction (1-5)</label>
+                <select name="Study Satisfaction" required>
+                    <option value="" selected disabled>Select Level</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sleep Duration</label>
+                <select name="Sleep Duration" required>
+                    <option value="" selected disabled>Select Sleep Duration</option>
+                    <option value="7-8 hours">7-8 hours</option>
+                    <option value="5-6 hours">5-6 hours</option>
+                    <option value="More than 8 hours">More than 8 hours</option>
+                    <option value="Less than 5 hours">Less than 5 hours</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Dietary Habits</label>
+                <select name="Dietary Habits" required>
+                    <option value="" selected disabled>Select Dietary Habit</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Healthy">Healthy</option>
+                    <option value="Unhealthy">Unhealthy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Have you ever had suicidal thoughts?</label>
+                <select name="Have you ever had suicidal thoughts ?" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Study Hours (0-15)</label>
+                <select name="Study Hours" required>
+                    <option value="" selected disabled>Select Study Hours</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Financial Stress (1-5)</label>
+                <select name="Financial Stress" required>
+                    <option value="" selected disabled>Select Level</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Family History of Mental Illness</label>
+                <select name="Family History of Mental Illness" required>
+                    <option value=""selected disabled>Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Predict</button>
+        </form>
+
+    </div>
+</body>
+</html>

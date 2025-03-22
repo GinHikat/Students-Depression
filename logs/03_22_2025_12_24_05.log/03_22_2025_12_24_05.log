@@ -1,0 +1,12 @@
+[2025-03-22 12:24:06,813] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-03-22 12:24:06,848] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-22 12:24:06,873] 97 werkzeug - INFO -  * Debugger PIN: 122-586-258
+[2025-03-22 12:24:08,370] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:24:08] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[2025-03-22 12:24:08,600] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:24:08] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-03-22 12:24:08,705] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:24:08] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-03-22 12:24:09,072] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:24:09] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=PaJhOiIw0lgvcrloqTHt HTTP/1.1" 200 -
+[2025-03-22 12:24:09,322] 97 werkzeug - INFO - 127.0.0.1 - - [22/Mar/2025 12:24:09] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-03-22 12:26:41,607] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\ML1_midterm\\app.py', reloading
+[2025-03-22 12:26:41,607] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\ml1_midterm\\app.py', reloading
+[2025-03-22 12:26:41,607] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\ML1_midterm\\app.py', reloading
+[2025-03-22 12:26:41,607] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\ml1_midterm\\app.py', reloading
