@@ -20,6 +20,11 @@ from main.extensions.logging.logger import logging
 from main.extensions.utils.utils import save_object, model_evaluation_reg, model_evaluation_class
 import mlflow
 from urllib.parse import urlparse
+import bentoml
+from bentoml.io import NumpyNdarray
+
+import dagshub
+dagshub.init(repo_owner='GinHikat', repo_name='Students-Depression', mlflow=True)
 
 #Set up mlflow environment
 os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/GinHikat/Students-Depression.mlflow"
@@ -167,7 +172,15 @@ class ModelTrainer:
             
             #Show metrics for the best models
             self.mlflow_tracking(y_test, y_pred, "AdaBoostClassifier")
+            logging.info('Metrics saved on Mlflow and Dagshub')
             
+            #Implement on BentoMl
+            saved_model = bentoml.sklearn.save_model('model', model)
+            model_trainer_demo = bentoml.sklearn.get('model:latest').to_runner()
+            model_trainer_demo.init_local()
+            # print(model_trainer_demo.predict.run([['Input data here']]))
+            logging.info('BentoMl will run based on given input')
+
         except Exception as e:
             raise CustomException(e, sys)
         

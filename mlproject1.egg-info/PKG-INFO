@@ -19,3 +19,6 @@ Requires-Dist: xgboost
 Requires-Dist: catboost
 Requires-Dist: mlflow
 Requires-Dist: pyaml
+Requires-Dist: dagshub
+Requires-Dist: bentoml==1.0.25
+Requires-Dist: dvc
