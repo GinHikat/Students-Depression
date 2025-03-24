@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import r2_score
+from sklearn.metrics import accuracy_score, f1_score, precision_score
 from sklearn.ensemble import AdaBoostClassifier, GradientBoostingClassifier, RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -18,14 +18,55 @@ from main.extensions.exceptions.exception import CustomException
 from main.extensions.logging.logger import logging
 
 from main.extensions.utils.utils import save_object, model_evaluation_reg, model_evaluation_class
+import mlflow
+from urllib.parse import urlparse
+
+#Set up mlflow environment
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/GinHikat/Students-Depression.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="GinHikat"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="@Zinmit0515"
 
 @dataclass
 class Train_path:
     model_path = os.path.join('main/artifacts', 'model.pkl')
     
+@dataclass
+class Metrics:
+    
+    def get_accuracy(self, y_test, y_pred):
+        accuracy = accuracy_score(y_test, y_pred)
+        return accuracy
+        
+    def get_f1(self, y_test, y_pred):
+        f1 = f1_score(y_test, y_pred)
+        return f1
+        
+    def get_precision(self, y_test, y_pred):
+        precision = precision_score(y_test, y_pred) 
+        return precision
+
 class ModelTrainer:
     def __init__(self):
         self.path = Train_path()
+        self.metrics = Metrics()
+        
+    def mlflow_tracking(self, y_test, y_pred, model):
+        mlflow.set_registry_uri("https://dagshub.com/GinHikat/Students-Depression.mlflow")
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        with mlflow.start_run():
+            f1 = self.metrics.get_f1(y_test, y_pred)
+            accuracy = self.metrics.get_accuracy(y_test, y_pred)
+            precision = self.metrics.get_precision(y_test, y_pred)
+        
+        mlflow.log_metric("f1_score",f1)
+        mlflow.log_metric("precision",precision)
+        mlflow.log_metric("accuracy",accuracy)
+        mlflow.sklearn.log_model(model,"model")
+        # Model registry does not work with file store
+        if tracking_url_type_store != "file":
+            mlflow.sklearn.log_model(model, "model", registered_model_name=model)
+        else:
+            mlflow.sklearn.log_model(model, "model")
         
     def init_train(self):
         try:
@@ -119,9 +160,13 @@ class ModelTrainer:
             
             model = AdaBoostClassifier(learning_rate=0.5, n_estimators=256)
             model.fit(X_train, y_train)
+            y_pred = model.predict(X_test)
             
             logging.info('Saving model to artifacts')
             save_object(self.path.model_path, model)
+            
+            #Show metrics for the best models
+            self.mlflow_tracking(y_test, y_pred, "AdaBoostClassifier")
             
         except Exception as e:
             raise CustomException(e, sys)

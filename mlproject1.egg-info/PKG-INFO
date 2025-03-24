@@ -17,3 +17,5 @@ Requires-Dist: python-multipart
 Requires-Dist: ipykernel
 Requires-Dist: xgboost
 Requires-Dist: catboost
+Requires-Dist: mlflow
+Requires-Dist: pyaml

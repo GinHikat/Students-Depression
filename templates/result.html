@@ -48,13 +48,13 @@
         {% if result < 0.5 %}
             <div class="low-risk">
                 <i class="fas fa-smile icon"></i>
-                <h2>Prediction: You have {{ result|round(2) }} chance of Depression</h2>
+                <h2>Prediction: You have {{ result*100|round(2) }}% chance of Depression</h2>
                 <p>Great job! Keep up your positive habits and stay healthy! 🌟</p>
             </div>
         {% else %}
             <div class="high-risk">
                 <i class="fas fa-exclamation-triangle icon"></i>
-                <h2>Prediction: You have {{ result|round(2) }} chance of Depression</h2>
+                <h2>Prediction: You have {{ result*100|round(2) }}% chance of Depression</h2>
                 <p>It's okay to struggle. Reach out to loved ones or a professional for support. You are not alone! 💙</p>
             </div>
         {% endif %}

@@ -12,3 +12,5 @@ python-multipart
 ipykernel
 xgboost
 catboost
+mlflow
+pyaml

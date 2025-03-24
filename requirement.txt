@@ -13,3 +13,5 @@ ipykernel
 xgboost
 catboost
 -e .
+mlflow
+pyaml
