@@ -18,3 +18,5 @@ pyaml
 dagshub
 bentoml==1.0.25
 dvc
+uvicorn
+fastapi

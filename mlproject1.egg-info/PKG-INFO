@@ -22,3 +22,5 @@ Requires-Dist: pyaml
 Requires-Dist: dagshub
 Requires-Dist: bentoml==1.0.25
 Requires-Dist: dvc
+Requires-Dist: uvicorn
+Requires-Dist: fastapi

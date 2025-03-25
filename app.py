@@ -5,6 +5,12 @@ import pandas as pd
 from main.pipelines.full_process import Final
 from main.pipelines.auto_predict import Data, Prediction
 
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, File, UploadFile,Request
+from uvicorn import run as app_run
+from fastapi.responses import Response
+from starlette.responses import RedirectResponse
+
 application = Flask(__name__)
 
 app = application

@@ -2,6 +2,8 @@ README.md
 setup.py
 main/__init__.py
 main/artifacts/__init__.py
+main/cloud/__init__.py
+main/cloud/s3_syncer.py
 main/extensions/__init__.py
 main/extensions/exceptions/__init__.py
 main/extensions/exceptions/exception.py
