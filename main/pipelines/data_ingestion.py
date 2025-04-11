@@ -4,11 +4,12 @@ from main.extensions.exceptions.exception import CustomException
 from main.extensions.logging.logger import logging
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
+from Source_info.source import Source
 
 @dataclass #dataclass decorator replaces the init function for class object
 class IngestionPath:
-    train_path: str = os.path.join('main/data/ingested', 'train.csv')
-    test_path: str = os.path.join('main/data/ingested', 'test.csv')
+    train_path: str = Source.data_ingested_train_path
+    test_path: str = Source.data_ingested_test_path
     
 class DataIngestion:
     def __init__(self):
@@ -18,7 +19,7 @@ class DataIngestion:
         logging.info("Initialize data ingestion")
 
         try:
-            df = pd.read_csv('main/data/raw/data.csv') 
+            df = pd.read_csv(Source.raw_data_path) 
             logging.info('Read data to csv')
             
             os.makedirs(os.path.dirname(self.path.train_path), exist_ok = True)
@@ -36,4 +37,6 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e, sys)
         
-
+if __name__ == '__main__':
+    ingest = DataIngestion()
+    ingest.init_ingestion()

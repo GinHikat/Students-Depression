@@ -1,0 +1,17 @@
+[2025-04-10 09:14:31,625] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:14:31,640] 107 dagshub - INFO - Accessing as GinHikat
+[2025-04-10 09:14:32,550] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/GinHikat/Students-Depression "HTTP/1.1 200 OK"
+[2025-04-10 09:14:33,457] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:14:33,478] 107 dagshub - INFO - Initialized MLflow to track repo "GinHikat/Students-Depression"
+[2025-04-10 09:14:33,481] 107 dagshub - INFO - Repository GinHikat/Students-Depression initialized!
+[2025-04-10 09:14:34,140] 80 root - INFO - Loading datasets
+[2025-04-10 09:14:34,157] 86 root - INFO - Encoding target values
+[2025-04-10 09:14:34,162] 94 root - INFO - Define models and parameters
+[2025-04-10 09:14:34,162] 166 root - INFO - Model training complete
+[2025-04-10 09:14:34,824] 172 root - INFO - Saving model to artifacts
+[2025-04-10 09:14:34,972] 21 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-04-10 09:14:34,981] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-10 09:14:34,989] 97 werkzeug - INFO -  * Debugger PIN: 792-503-146
+[2025-04-10 09:16:08,670] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\Student Depression\\main\\pipelines\\model_training.py', reloading
+[2025-04-10 09:16:08,670] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\Student Depression\\main\\pipelines\\model_training.py', reloading
+[2025-04-10 09:16:08,670] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\student depression\\main\\pipelines\\model_training.py', reloading

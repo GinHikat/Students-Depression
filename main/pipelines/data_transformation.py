@@ -10,6 +10,9 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
+from Source_info.source import Source
+
+
 #Define parameter for KNNImputer
 KNN_params = {
     "missing_values": np.nan,
@@ -19,13 +22,13 @@ KNN_params = {
 
 @dataclass
 class transformation_path:
-    train_path = os.path.join('main/data/transformed', 'x_train.csv')
-    test_path = os.path.join('main/data/transformed', 'x_test.csv')
+    train_path = Source.data_X_train_path
+    test_path = Source.data_X_test_path
     
-    target_train_path = os.path.join('main/data/transformed', 'y_train.csv')
-    target_test_path = os.path.join('main/data/transformed', 'y_test.csv')
+    target_train_path = Source.data_y_train_path
+    target_test_path = Source.data_y_test_path
     
-    processor_path = os.path.join('main/artifacts', 'processor.pkl')
+    processor_path = Source.processor_path
     
 class transformation:
     def __init__(self):
@@ -75,8 +78,8 @@ class transformation:
             logging.info("Load train and test raw") 
             
             #Read train and test from ingestion
-            train = pd.read_csv('main/data/ingested/train.csv')
-            test = pd.read_csv('main/data/ingested/test.csv')
+            train = pd.read_csv(Source.data_ingested_train_path)
+            test = pd.read_csv(Source.data_ingested_test_path)
             
             #Split target and variables
             

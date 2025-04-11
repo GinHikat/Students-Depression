@@ -1,0 +1,18 @@
+[2025-04-10 09:10:28,120] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:10:28,142] 107 dagshub - INFO - Accessing as GinHikat
+[2025-04-10 09:10:29,041] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/GinHikat/Students-Depression "HTTP/1.1 200 OK"
+[2025-04-10 09:10:30,061] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:10:30,061] 107 dagshub - INFO - Initialized MLflow to track repo "GinHikat/Students-Depression"
+[2025-04-10 09:10:30,061] 107 dagshub - INFO - Repository GinHikat/Students-Depression initialized!
+[2025-04-10 09:10:30,735] 80 root - INFO - Loading datasets
+[2025-04-10 09:10:30,754] 86 root - INFO - Encoding target values
+[2025-04-10 09:10:30,760] 94 root - INFO - Define models and parameters
+[2025-04-10 09:10:30,760] 166 root - INFO - Model training complete
+[2025-04-10 09:10:31,454] 172 root - INFO - Saving model to artifacts
+[2025-04-10 09:10:31,603] 21 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-04-10 09:10:31,613] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-10 09:10:31,620] 97 werkzeug - INFO -  * Debugger PIN: 792-503-146
+[2025-04-10 09:10:31,678] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 09:10:31] "GET /prediction HTTP/1.1" 200 -
+[2025-04-10 09:11:30,212] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 09:11:30] "POST /prediction HTTP/1.1" 200 -
+[2025-04-10 09:11:32,325] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 09:11:32] "GET /prediction HTTP/1.1" 200 -
+[2025-04-10 09:12:04,678] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 09:12:04] "POST /prediction HTTP/1.1" 200 -

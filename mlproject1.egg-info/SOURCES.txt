@@ -1,5 +1,7 @@
 README.md
 setup.py
+Source_info/__init__.py
+Source_info/source.py
 main/__init__.py
 main/artifacts/__init__.py
 main/cloud/__init__.py

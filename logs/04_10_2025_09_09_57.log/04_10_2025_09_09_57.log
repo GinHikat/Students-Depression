@@ -1,0 +1,18 @@
+[2025-04-10 09:10:09,270] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:10:09,286] 107 dagshub - INFO - Accessing as GinHikat
+[2025-04-10 09:10:10,427] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/GinHikat/Students-Depression "HTTP/1.1 200 OK"
+[2025-04-10 09:10:11,215] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:10:11,231] 107 dagshub - INFO - Initialized MLflow to track repo "GinHikat/Students-Depression"
+[2025-04-10 09:10:11,234] 107 dagshub - INFO - Repository GinHikat/Students-Depression initialized!
+[2025-04-10 09:10:11,917] 80 root - INFO - Loading datasets
+[2025-04-10 09:10:11,933] 86 root - INFO - Encoding target values
+[2025-04-10 09:10:11,933] 94 root - INFO - Define models and parameters
+[2025-04-10 09:10:11,933] 166 root - INFO - Model training complete
+[2025-04-10 09:10:12,622] 172 root - INFO - Saving model to artifacts
+[2025-04-10 09:10:12,781] 21 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-04-10 09:10:12,801] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.142.169:5000
+[2025-04-10 09:10:12,802] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-04-10 09:10:12,825] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

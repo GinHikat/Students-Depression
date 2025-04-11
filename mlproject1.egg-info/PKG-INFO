@@ -24,3 +24,5 @@ Requires-Dist: bentoml==1.0.25
 Requires-Dist: dvc
 Requires-Dist: uvicorn
 Requires-Dist: fastapi
+Requires-Dist: tensorflow
+Requires-Dist: scikeras

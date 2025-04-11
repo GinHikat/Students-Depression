@@ -1,0 +1,24 @@
+[2025-04-10 09:06:56,020] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:06:56,035] 107 dagshub - INFO - Accessing as GinHikat
+[2025-04-10 09:06:56,909] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/GinHikat/Students-Depression "HTTP/1.1 200 OK"
+[2025-04-10 09:06:57,744] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-10 09:06:57,744] 107 dagshub - INFO - Initialized MLflow to track repo "GinHikat/Students-Depression"
+[2025-04-10 09:06:57,755] 107 dagshub - INFO - Repository GinHikat/Students-Depression initialized!
+[2025-04-10 09:06:58,643] 80 root - INFO - Loading datasets
+[2025-04-10 09:06:58,666] 86 root - INFO - Encoding target values
+[2025-04-10 09:06:58,676] 94 root - INFO - Define models and parameters
+[2025-04-10 09:06:58,676] 166 root - INFO - Model training complete
+[2025-04-10 09:06:59,419] 172 root - INFO - Saving model to artifacts
+[2025-04-10 09:07:30,749] 177 root - INFO - Metrics saved on Mlflow and Dagshub
+[2025-04-10 09:07:30,767] 149 bentoml._internal.frameworks.sklearn - INFO - Using the default model signature for scikit-learn ({'predict': {'batchable': False}}) for model "model".
+[2025-04-10 09:07:31,607] 295 bentoml._internal.runner.runner - WARNING - 'Runner.init_local' is for debugging and testing only. Make sure to remove it before deploying to production.
+[2025-04-10 09:07:31,760] 184 root - INFO - BentoMl will run based on given input
+[2025-04-10 09:07:31,774] 21 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-04-10 09:07:31,778] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-10 09:07:31,789] 97 werkzeug - INFO -  * Debugger PIN: 792-503-146
+[2025-04-10 09:07:31,857] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 09:07:31] "GET / HTTP/1.1" 200 -
+[2025-04-10 09:07:33,371] 97 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 09:07:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-04-10 09:07:40,466] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\student depression\\main\\pipelines\\model_training.py', reloading
+[2025-04-10 09:07:40,466] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\Student Depression\\main\\pipelines\\model_training.py', reloading
+[2025-04-10 09:07:40,471] 97 werkzeug - INFO -  * Detected change in 'd:\\study\\education\\projects\\student depression\\main\\pipelines\\model_training.py', reloading
+[2025-04-10 09:07:40,471] 97 werkzeug - INFO -  * Detected change in 'd:\\Study\\Education\\Projects\\Student Depression\\main\\pipelines\\model_training.py', reloading
