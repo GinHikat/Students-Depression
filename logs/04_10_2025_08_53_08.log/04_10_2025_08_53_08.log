@@ -1,5 +1,0 @@
-[2025-04-10 08:53:10,254] 19 root - INFO - Initialize data ingestion
-[2025-04-10 08:53:10,290] 23 root - INFO - Read data to csv
-[2025-04-10 08:53:10,290] 28 root - INFO - Train test split
-[2025-04-10 08:53:10,295] 31 root - INFO - Saving train and test
-[2025-04-10 08:53:10,303] 35 root - INFO - Saving complete!
